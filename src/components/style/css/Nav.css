@@ -1,0 +1,130 @@
+nav{
+    background-color: #123;
+    padding: 5px 20px;
+    position: fixed;
+    width: 98%;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+.navLogo{
+    color: #fff;
+    margin: 0 auto;
+    font-size: 1.4rem !important;
+}
+.navLogo a:hover {
+  text-decoration: none;
+}
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+.toggle{
+order: 3;
+}
+.navItem.navButton{
+    order: 1;
+}
+.navItem{
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin: 0 auto;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.show{
+    display: block;
+}
+.active{
+    display: block;
+}
+.fas{
+    color:#fff;
+}
+.navButton.navSecondary {
+  border-bottom: 1px #444 solid;
+}
+@media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .navLogo {
+      flex: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+    .navItem.navButton {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .navButton.navSecondary {
+      border: 0;
+    }
+    .navButton a {
+      padding: 7.5px 15px;
+      background-color: teal;
+      border: 1px #006d6d solid;
+    }
+    .navButton.navSecondary a {
+      background: transparent;
+    }
+    .navButton a:hover {
+      text-decoration: none;
+    }
+    .navButton:not(.navSecondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+    }
+    .navButton.navButton.navSecondary a:hover {
+      color: #ddd;
+    }
+  }
+  @media all and (min-width: 900px) {
+    .navItem {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+      order: 3;
+    }
+    .navLogo {
+      order: 0;
+    }
+    .navItem {
+      order: 1;
+    }
+    .navButton {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.navButton {
+      padding-right: 0;
+    }
+  }
