@@ -89,9 +89,6 @@ export default function App() {
         <option value=" Self-Help"> Self-Help</option>
       </select>
 
-      <Titles>Video URL</Titles>
-      <input type="text" placeholder="Video URL" name="Video URL" ref={register({required: true, maxLength: 80})} />
-
       
 
       <Titles>Description</Titles>
