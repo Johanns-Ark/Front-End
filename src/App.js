@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/pages/navbar/NavBar';
+import AddVideo from './components/pages/AddEditVids/AddVideo'
+import Editvideo from './components/pages/AddEditVids/Editvideo'
+// import NavBar from './components/pages/navbar/NavBar';
 import AppRouter from './components/configs/AppRouter';
 
 function App() {
   return (
     <div className="App">
-     <NavBar />
-<AppRouter />
+      <AddVideo />
+      <Editvideo /> 
+      {/* <NavBar /> */}
+{/* <AppRouter /> */}
     </div>
   );
 }
