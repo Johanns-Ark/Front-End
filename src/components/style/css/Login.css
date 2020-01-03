@@ -6,7 +6,7 @@
     position: absolute;
 }
 
-form  {
+.login-form  {
     color: black;
     margin: 0 auto;
     position: relative;
@@ -20,8 +20,7 @@ form  {
       font-size: 10px;
   }
 
-  /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+.login-input, select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -29,20 +28,29 @@ input[type=text], select, textarea{
     box-sizing: border-box;
     resize: vertical;
   }
-  
-  /* Style the label to display next to the inputs */
+
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
-  /* Style the submit button */
-  input[type=submit] {
+  .login-submit {
+    margin-top: 11px;
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
+    width: 100%;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+  }
+
+.hands-container {
+    /* margin: 20%;
+    height: 200px;
+    width: 50%; */
+}
+  .hands {
+    height: 200px;
+    /* width: 50%; */
   }

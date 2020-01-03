@@ -4,6 +4,9 @@ import "../../style/css/Login.css";
 import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import hands from "../../images/shoeib-abolhassani-ukDEbYnyDsU-unsplash.jpg"
+
+
 const Login = props => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = values => {
@@ -31,8 +34,14 @@ const Login = props => {
 
   return (
     <div className="login-container">
+
+      <div className="hands-container">
+      <img className="hands" src={hands} alt="hands" />
+      </div>
+      
       <h1>Where learning is just a swipe away</h1>
-    <form onSubmit={handleSubmit(onSubmit)}>
+    
+    <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
       <h3>Username</h3>
       <input className="login-input"
         name="username"
