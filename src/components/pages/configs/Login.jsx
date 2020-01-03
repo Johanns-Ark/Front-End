@@ -1,4 +1,5 @@
-import "../../style/css/Test.css";
+// import "../../style/css/Test.css";
+import "../../style/css/Login.css";
 
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -29,16 +30,19 @@ const Login = props => {
   };
 
   return (
+    <div className="login-container">
+      <h1>Where learning is just a swipe away</h1>
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input
+      <h3>Username</h3>
+      <input className="login-input"
         name="username"
         ref={register({
           required: "Required"
         })}
       />
       {errors.username && errors.username.message}
-
-      <input
+        <h3>Password</h3>
+      <input className="login-input"
         name="password"
         ref={register({
           validate: value => value !== "admin" || "Nice try!"
@@ -46,8 +50,9 @@ const Login = props => {
       />
       {errors.password && errors.password.message}
 
-      <button type="submit">Submit</button>
+      <button className="login-submit" type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 export default Login;
